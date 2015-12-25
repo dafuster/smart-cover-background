@@ -1,0 +1,31 @@
+/* CSS declarations go here */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.background-landscape {
+  background: url('camera-landscape.jpg') 0 0 no-repeat;
+  background-size: cover;
+}
+.background-portrait {
+  background: url('camera-portrait.jpg') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.demo {
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: relative;
+}
+
+.smart-background-focus {
+  width: 1px;
+  height: 1px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: -5px;
+  position: absolute;
+  border: 1px solid cyan;
+}
