@@ -1,7 +1,13 @@
 # smart-background
 
-Smart background will auto position your background image so that a focus point of the image that you designate will 
-always be visible.
+With responsive web design as the standard today, background images with the `background-size` set to `cover` are frequently
+used when setting a background image to a container. This allows the designer to essentially take an image and fully wrap a given container and show as much of the image as possible without distoring the image (changing its aspect ratio).
+
+A common challenge with cover backgrounds is that one does not have full control of what the user is able to see in different
+responsive view sizes (mobile vs desktop).
+
+Smart background fixes that problem by auto positioning your background image so that a focus point of the image that is
+designated will always be visible to the user.
 
 * [Demo](#demo)
 * [Usage](#usage)
@@ -44,10 +50,6 @@ var bg = document.querySelector('[data-smart-background]'),
 
 <a name="how-it-works"></a>
 ## How it works
-
-A common problem with 'cover' backgrounds is that one cannot control what part of the background image is actually 
-visible to the user. The visibility and framing of the image soley depends on the aspect ratio of both the image and its
-container.
 
 Typically when using a background image that is set to `cover`, the background image is stretched to fully cover the 
 surface area of its container, without distorting the image (maintaining its aspect ratio). To do this, the browser 
