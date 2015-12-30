@@ -1,7 +1,7 @@
 # smart-background
 
 With responsive web design as the standard today, background images with the `background-size` set to `cover` are frequently
-used when setting a background image to a container. 
+used when setting a background image to a container.
 
 This allows the designer to essentially take an image and fully wrap a given container and show as much of the image as possible without distorting the image (changing its aspect ratio).
 
@@ -17,7 +17,7 @@ designated will always be visible to the user.
 
 <a name="demo"></a>
 ## Demo
-<a href="http://smart-background.meteor.com/" target="_blank">http://smart-background.meteor.com/</a>
+[http://smart-background.meteor.com/] (http://smart-background.meteor.com/)
 
 <a name="usage"></a>
 ## Usage
@@ -25,45 +25,46 @@ Let's say you have an image with the dimensions of 800 width by 600 height and y
 Which translates to a 400 left and 300 top:
 
 ##### HTML
-```
-<div class="my-background"
-  data-smart-background
-  data-width="800"
-  data-height="600"
-  data-focus-left="400"
-  data-focus-top="300">
-</div>
-```
+
+	<div class="my-background"
+	  data-smart-background
+	  data-width="800"
+	  data-height="600"
+	  data-focus-left="400"
+	  data-focus-top="300">
+	</div>
 
 #### CSS
-```
-.my-background {
-  background-size: cover;
-  background-image: url( 800x600-image.jpg );
-}
-```
+
+	.my-background {
+	  background-size: cover;
+	  background-image: url( 800x600-image.jpg );
+	}
 
 #### JS
-```
-var bg = document.querySelector('[data-smart-background]'),
-  smartBG = new SmartBackground(bg);
-```
+
+	var bg = document.querySelector('[data-smart-background]'),
+	  smartBG = new SmartBackground(bg);
 
 
 <a name="how-it-works"></a>
 ## How it works
 
-Typically when using a background image that is set to `cover`, the background image is stretched to fully cover the 
-surface area of its container, without distorting the image (maintaining its aspect ratio). To do this, the browser 
-figures out the shorter side of the image (width or height) and sets it to 100% of its container's shorter side 
-(width or height). 
+Typically when using a background image that is set to `cover`, the background image is stretched to fully cover the
+surface area of its container, without distorting the image (maintaining its aspect ratio). To do this, the browser
+figures out the shorter side of the image (width or height) and sets it to 100% of its container's shorter side
+(width or height).
 
-##### Example:
+#### Example:
 * An image has a width of 400px and height of 200px.
-* The container it is set as a background in has a width 800px and height of 600px.
-* When set to 'cover' the background image's height of 200px (the shorter side) is set to 100% of the container's shorter
-side which in this case is 600px. This allows for the image to fully cover its container.
+* The container the image is set as a background in has a width 800px and height of 600px.
 
-Smart background takes a focus point's dimensions (x and y) which translates to the distance left and top from the upper 
-left corner of the image. It then calculates an offset that is set as a `background-position: x y` on the container, to
-ensure that the focus point is within the visible area of the container.
+When the container is set to `background-size: cover;`
+
+* The image's height of 200px (the shorter side) is translated to equal 100% of the container's shorter side which in this case is 600px.
+* The width of the image is naturally translated to px which maintains the image's initial aspect ratio.
+* This allows for the image to fully cover its container.
+
+Smart background starts by taking a focus point's position  from the upper left corner of the image. This is collected in pixels as a left and top variables (see diagram).
+
+It then calculates an offset of the background image `background-position: left top;` that will maintain the cover effect of the background but also ensure that the focus point designated is in the center of the container.
