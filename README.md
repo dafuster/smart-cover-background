@@ -1,7 +1,9 @@
 # smart-background
 
 With responsive web design as the standard today, background images with the `background-size` set to `cover` are frequently
-used when setting a background image to a container. This allows the designer to essentially take an image and fully wrap a given container and show as much of the image as possible without distoring the image (changing its aspect ratio).
+used when setting a background image to a container. 
+
+This allows the designer to essentially take an image and fully wrap a given container and show as much of the image as possible without distorting the image (changing its aspect ratio).
 
 A common challenge with cover backgrounds is that one does not have full control of what the user is able to see in different
 responsive view sizes (mobile vs desktop).
