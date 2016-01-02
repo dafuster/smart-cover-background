@@ -1,0 +1,27 @@
+{
+  "name": "smart-background",
+  "homepage": "https://github.com/dafuster/smart-background",
+  "authors": [
+    "David Fu <david@binarypixel.com>"
+  ],
+  "description": "Auto focus background images that are set to cover",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "background",
+    "cover",
+    "focus",
+    "smart"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo",
+    "test",
+    "tests"
+  ]
+}
