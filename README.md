@@ -3,8 +3,6 @@
 With responsive web design as the standard today, background images with the `background-size` set to `cover` are frequently
 used when setting a background image to a container.
 
-This allows the designer to essentially take an image and fully wrap a given container and show as much of the image as possible without distorting the image (changing its aspect ratio).
-
 A common challenge with cover backgrounds is that one does not have full control of what the user is able to see in different
 responsive view sizes (mobile vs desktop).
 
@@ -18,6 +16,18 @@ designated will always be visible to the user.
 <a name="demo"></a>
 ## Demo
 [http://smart-background.meteor.com/] (http://smart-background.meteor.com/)
+
+The demo was built with [Meteor] (https://www.meteor.com/).
+
+To run it locally, you'll need Meteor installed, if you do not have it, run:
+
+	curl https://install.meteor.com/ | sh
+
+Then navigate to demo directory and simply type:
+
+	meteor
+
+
 
 <a name="usage"></a>
 ## Usage

@@ -1,0 +1,11 @@
+{
+  "name": "smart-background demo",
+  "homepage": "https://github.com/dafuster/smart-background",
+  "authors": [
+    "David Fu <david@binarypixel.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "smart-background": "*"
+  }
+}
