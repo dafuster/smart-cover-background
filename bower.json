@@ -5,7 +5,9 @@
     "David Fu <david@binarypixel.com>"
   ],
   "description": "Auto focus background images that are set to cover",
-  "main": "",
+  "main": [
+    "lib/smart-background.js"
+  ],
   "moduleType": [
     "globals"
   ],
