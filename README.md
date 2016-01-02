@@ -41,7 +41,7 @@ Then navigate to demo directory and simply type:
 Let's say you have an image with the dimensions of 800 width by 600 height and you want to focus the center of the image.
 Which translates to a 400 left and 300 top:
 
-##### HTML
+#### HTML
 
 	<div class="my-background"
 	  data-smart-background
