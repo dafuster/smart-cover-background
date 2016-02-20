@@ -1,4 +1,4 @@
-# smart-background
+# smart-cover-background
 
 With responsive web design as the standard today, background images with the `background-size` set to `cover` are frequently
 used when setting a background image to a container.
@@ -6,8 +6,7 @@ used when setting a background image to a container.
 A common challenge with cover backgrounds is that one does not have full control of what the user is able to see in different
 responsive view sizes (mobile vs desktop).
 
-Smart background fixes that problem by auto positioning your background image so that a focus point of the image that is
-designated will always be visible to the user.
+Smart cover background fixes that problem by auto positioning your background cover image so that a focus point of the image that is designated will always be visible to the user.
 
 * [Demo](#demo)
 * [Installation](#installation)
@@ -82,6 +81,6 @@ When the container is set to `background-size: cover;`
 * The width of the image is naturally translated to px which maintains the image's initial aspect ratio.
 * This allows for the image to fully cover its container.
 
-Smart background starts by taking a focus point's position  from the upper left corner of the image. This is collected in pixels as a left and top variables (see diagram).
+Smart cover background starts by taking a focus point's position  from the upper left corner of the image. This is collected in pixels as a left and top variables (see diagram).
 
 It then calculates an offset of the background image `background-position: left top;` that will maintain the cover effect of the background but also ensure that the focus point designated is in the center of the container.
